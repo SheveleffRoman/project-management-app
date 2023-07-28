@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.sm\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+}
