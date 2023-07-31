@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HeaderComponent } from '../header/header.component';
 
 @Component({
   selector: 'app-product',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./product.component.scss']
 })
 export class ProductComponent {
+
+  buttonClick() {
+    let logInBtn = document.getElementById('logIn');
+    logInBtn?.click();
+  }
 
 }

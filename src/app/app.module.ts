@@ -8,6 +8,7 @@ import { FooterComponent } from './core/footer/footer.component';
 import { ProductComponent } from './core/product/product.component';
 import { TechnologiesComponent } from './core/technologies/technologies.component';
 import { TeamComponent } from './core/team/team.component';
+import { AuthFormComponent } from './core/auth-form/auth-form.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { TeamComponent } from './core/team/team.component';
     ProductComponent,
     TechnologiesComponent,
     TeamComponent,
+    AuthFormComponent,
   ],
   imports: [
     BrowserModule,

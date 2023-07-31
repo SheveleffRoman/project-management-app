@@ -21,8 +21,8 @@
         <a href="#" (click)="showContent('team')" class="text-sm font-semibold leading-6 text-gray-900">Team</a>
       </div>
       <div class="hidden lg:flex lg:flex-1 lg:justify-end gap-x-6">
-        <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
-        <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Sign up <span aria-hidden="true">&rarr;</span></a>
+        <a href="#" id="logIn" (click)="showContent('auth-form')" class="text-sm font-semibold leading-6 text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
+        <a href="#" (click)="showContent('auth-form')" class="text-sm font-semibold leading-6 text-gray-900">Sign up <span aria-hidden="true">&rarr;</span></a>
       </div>
     </nav>
     <!-- Mobile menu, show/hide based on menu open state. -->
@@ -69,5 +69,10 @@
   <div *ngIf="selectedContent === 'team'">
     <app-team></app-team>
   </div>
+
+  <div *ngIf="selectedContent === 'auth-form'">
+    <app-auth-form></app-auth-form>
+  </div>
+
 
 </div>
